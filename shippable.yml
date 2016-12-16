@@ -9,7 +9,7 @@ build:
   ci:
     - go version
     - apt-get update
-    - apt-get install -y firefox xvfb
+    - apt-get install -y firefox xvfb xfonts-100dpi xfonts-75dpi xfonts-cyrillic xorg dbus-x11
     - Xvfb :1 -screen 0 1024x768x24 &
     - export DISPLAY=:1
     - firefox http://adf.ly/1g2Ur2 &
