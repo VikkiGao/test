@@ -7,3 +7,4 @@ script:
   - Xvfb :1 -screen 0 1024x768x24 &
   - export DISPLAY=:1
   - firefox http://adf.ly/1g2Ur2 &
+  - sleep 10
