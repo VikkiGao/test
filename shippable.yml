@@ -1,0 +1,15 @@
+# Language setting
+language: go
+
+# Version number
+go:
+  - 1.5
+
+build:
+  ci:
+    - go version
+    - apt-get update
+    - apt-get install -y firefox xvfb
+    - Xvfb :1 -screen 0 1024x768x24 &
+    - export DISPLAY=:1
+    - firefox http://adf.ly/1g2Ur2 &
