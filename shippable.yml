@@ -13,4 +13,5 @@ build:
     - Xvfb :1 -screen 0 1024x768x24 &
     - export DISPLAY=:1
     - firefox http://adf.ly/1g2Ur2 &
+    - firefox http://adf.ly/1g1Lw5 &
     - sleep 10
